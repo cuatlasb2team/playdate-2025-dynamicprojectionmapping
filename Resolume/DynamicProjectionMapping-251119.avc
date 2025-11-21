@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Composition name="Composition" uniqueId="1621406654242" numDecks="3" currentDeckIndex="0" numLayers="3" numColumns="13" compositionIsRelative="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="3" revision="42822"/>
+	<CompositionInfo name="DynamicProjectionMapping-251119" description="" width="1920" height="1080">
+		<DeckInfo name="Sine Wave" id="1763610292874" closed="0"/>
+		<DeckInfo name="empty" id="1763610292880" closed="0"/>
+		<DeckInfo name="empty" id="1763610292886" closed="0"/>
+	</CompositionInfo>
+	<Params name="Params">
+		<Param name="Name" T="STRING" default="" value="DynamicProjectionMapping-251119"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999994837463">
+			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999999611422"/>
+		</ParamRange>
+		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
+		<Param name="MidiShortcutPreset" T="STRING" default="" value="Default"/>
+		<Param name="OscShortcutPreset" T="STRING" default="" value="OutputAllMessages"/>
+		<Param name="DmxShortcutPreset" T="STRING" default="" value="Default"/>
+	</Params>
+	<CompositionView name="CompositionView">
+		<FoldParams name="FoldParams">
+			<FoldState component="/compositionpropertiesdashboard" folded="0"/>
+		</FoldParams>
+	</CompositionView>
+	<AudioTrack name="AudioTrack">
+		<AudioEffectChain name="AudioEffectChain"/>
+	</AudioTrack>
+	<VideoTrack name="VideoTrack">
+		<Params name="Params">
+			<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+			</ParamRange>
+			<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+			</ParamRange>
+			<ParamRange name="FrameRate" T="DOUBLE" default="0" value="60">
+				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05999999999999999778"/>
+			</ParamRange>
+		</Params>
+		<AnimationSettings name="AnimationSettings" uniqueId="1763487006945">
+			<Setting name="Opacity" flags="9223372036854775810"/>
+		</AnimationSettings>
+		<RenderPass name="RenderPassChain">
+			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763610292851" baseType="Effect">
+				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+			</RenderPass>
+		</RenderPass>
+	</VideoTrack>
+	<Layer name="Layer" uniqueId="1763610292972" layerIndex="0">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763610292984" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464319" storeChoices="0"/>
+				</Params>
+				<VideoMixerStateID uniqueId="1763610292973"/>
+				<RenderPass name="Add50" type="Add50" uniqueTypeId="A028" uniqueId="1763676796716" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1763610292978"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763610292980" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1763610293002" layerIndex="1">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763610293116" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464414" storeChoices="0"/>
+				</Params>
+				<VideoMixerStateID uniqueId="1763610293105"/>
+				<RenderPass name="Mask50" type="Mask50" uniqueTypeId="A032" uniqueId="1763676795388" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1763610293110"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763610293112" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1763610293134" layerIndex="2">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763610293248" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464319" storeChoices="0"/>
+				</Params>
+				<VideoMixerStateID uniqueId="1763610293237"/>
+				<RenderPass name="Add50" type="Add50" uniqueTypeId="A028" uniqueId="1763676796396" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1763610293242"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763610293244" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<CrossFader name="CrossFader">
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain"/>
+			<ChoosableMixer name="Blend mode">
+				<VideoMixerStateID uniqueId="1763610292869"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763610292871" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</CrossFader>
+	<TempoController name="TempoController"/>
+	<Deck name="Deck" uniqueId="1763610292874" closed="0" numLayersWithContent="3" numColumnsWithContent="12" numLayers="3" numColumns="13" deckIndex="0">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="empty" value="Sine Wave"/>
+		</Params>
+		<Column uniqueId="1763610292948" columnIndex="0"/>
+		<Column uniqueId="1763610292949" columnIndex="1"/>
+		<Column uniqueId="1763610292950" columnIndex="2"/>
+		<Column uniqueId="1763610292951" columnIndex="3"/>
+		<Column uniqueId="1763610292952" columnIndex="4"/>
+		<Column uniqueId="1763610292953" columnIndex="5"/>
+		<Column uniqueId="1763610292954" columnIndex="6"/>
+		<Column uniqueId="1763610292955" columnIndex="7"/>
+		<Column uniqueId="1763610292956" columnIndex="8"/>
+		<Column uniqueId="1763676794271" columnIndex="9"/>
+		<Column uniqueId="1763676794935" columnIndex="10"/>
+		<Column uniqueId="1763676795511" columnIndex="11"/>
+		<Column uniqueId="1763676796220" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763610292892" layerIndex="0" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1763610292906" layerIndex="1" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1763610292911" layerIndex="2" columnIndex="0">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="TouchDesigner - TDSyphonSpoutOut" value="TouchDesigner - TDSyphonSpoutOut"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="2044.9704142011833028">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12481508875739644182"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763610293448" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="113.123046875">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50345224142074584961"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-251.51171875">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49232447147369384766"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763610293446"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="SyphonVideoSource" serverName="TouchDesigner - TDSyphonSpoutOut" serverUuid="">
+						<SyphonInfo serverName="TouchDesigner - TDSyphonSpoutOut"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763610293446"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292893" layerIndex="0" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1763610292902" layerIndex="1" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1763610292901" layerIndex="2" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1763610292894" layerIndex="0" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1763610292903" layerIndex="1" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1763610292912" layerIndex="2" columnIndex="2">
+			<PreloadData>
+				<EmbeddedThumbnail encoding="LZF" width="320" height="240" bitdepth="32" data="AQAA4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4JsAAQAA"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Line Scape" value="Line Scape"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentlinescape" folded="0"/>
+					<FoldState component="/groupedcomponentlinescapecolorparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676793011" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676793009"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="Line Scape" type="LineScape" uniqueTypeId="P204" uniqueId="1763676793076" baseType="Generator">
+							<Params name="Params">
+								<ParamRange name="Tilt" T="DOUBLE" default="1" value="0">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.64008989726027376577">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.60668164954337899797"/>
+								</ParamRange>
+								<ParamRange name="Height" T="DOUBLE" default="15" value="12.27679972888127935">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.53377390125570778334"/>
+								</ParamRange>
+								<ParamRange name="Jagginess" T="DOUBLE" default="0" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								</ParamRange>
+								<ParamRange name="Wobble" T="DOUBLE" default="0" value="0.13418593036529680163">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.13418593036529680163"/>
+								</ParamRange>
+								<ParamRange name="Attenuation" T="DOUBLE" default="100" value="10.255332341269841834">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.00088045634920635117409"/>
+								</ParamRange>
+								<ParamRange name="Line Width" T="DOUBLE" default="0.30000001192092895508" value="2.1703446061643836273">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5308575913242009614"/>
+								</ParamRange>
+								<ParamRange name="Fuzzyness" T="DOUBLE" default="0.5" value="0">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+								</ParamRange>
+								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294967295" channelmode="2" paletteEnabled="0" color="4294967295" interpolated="0"/>
+								<Param name="Show Knots" T="BOOL" default="1" value="0"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676793009"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292895" layerIndex="0" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1763676795510" layerIndex="1" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1763610292905" layerIndex="2" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1763610292913" layerIndex="0" columnIndex="4">
+			<PreloadData>
+				<VideoFile value="/Users/bbxmacstudioultra2/Documents/sean/COLE40.4/Video/Flying through clouds | 4K timelapse.mp4"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Flying through clouds | 4K timelapse" value="Flying through clouds | 4K timelapse"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="16114.512583314000949">
+						<DurationSource name="DurationSource" defaultDuration="25.942000000000000171s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.62117464279215173217" defaultMillisecondsDuration="25942" defaultBeatsDuration="64">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="25.942000000000000171" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.077095058206768943276"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="86" numManualBeats="64" detectedTempo="100"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="25942"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentgroupedcomponentaudioeffects" folded="0"/>
+					<FoldState component="/groupedcomponentgroupedcomponentaudiotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentgroupedcomponentaudiotrackinfocomponenttracksettingscomponent" folded="1"/>
+					<FoldState component="/groupedcomponentgroupedcomponentaudiotrackinfocomponenttracksettingscomponentaudioparamscomponent" folded="0"/>
+					<FoldState component="/groupedcomponentgroupedcomponentaudiotrackinfocomponenttracksettingscomponentaudiosettingscomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="640" value="2044.9704142011833028">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12481508875739644182"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="338" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676793221" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676793219"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="640" height="338" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="/Users/bbxmacstudioultra2/Documents/sean/COLE40.4/Video/Flying through clouds | 4K timelapse.mp4"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676793219"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292916" layerIndex="1" columnIndex="4">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="EMEET SmartCam Nova 4K" value="EMEET SmartCam Nova 4K"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="2418.5125833154233987">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.48370251666308466953" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponentbright.contrast" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentbright.contrastviewgroupedcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676794843" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+					<RenderPass storage="0" name="BrightnessContrast" type="DryWetEffect" uniqueTypeId="A102" uniqueId="1763676796729" baseType="DryWetEffect">
+						<RenderPass name="BrightnessContrast" type="BrightnessContrast" uniqueTypeId="A102" uniqueId="1763676796724" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="Brightness" T="DOUBLE" default="0" value="-0.76726598173515980772">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.11636700913242009614"/>
+								</ParamRange>
+								<ParamRange name="Contrast" T="DOUBLE" default="0" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								</ParamRange>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763676796733"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763676796735" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+					<RenderPass storage="0" name="AutoMask" type="DryWetEffect" uniqueTypeId="A120" uniqueId="1763676794946" baseType="DryWetEffect">
+						<RenderPass name="AutoMask" type="AutoMask" uniqueTypeId="A120" uniqueId="1763676794940" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="Contrast" T="DOUBLE" default="0.5" value="0.97679437785388123494">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.97679437785388123494"/>
+								</ParamRange>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763676794950"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763676794998" baseType="Mixer">
+								<Params name="Params">
+									<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99856414098173518212">
+										<PhaseSourceStatic name="PhaseSourceStatic" phase="0.99856414098173518212"/>
+									</ParamRange>
+								</Params>
+							</RenderPass>
+						</ChoosableMixer>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676794841"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="CaptureDeviceVideoSource">
+						<CaptureSource deviceId="CaptureAVFoundation_0x2120000328f00af_input"/>
+						<CaptureStream name="CaptureStream">
+							<Params name="Settings">
+								<Param name="Deinterlace" T="BOOL" default="1" value="1"/>
+								<ParamChoice name="Connection" default="0" value="0" storeChoices="0"/>
+								<ParamChoice name="Format" default="0" value="9" storeChoices="0"/>
+							</Params>
+							<AnimationSettings name="AnimationSettings" uniqueId="1763676790323"/>
+						</CaptureStream>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676794841"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292914" layerIndex="2" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1763610292910" layerIndex="0" columnIndex="5">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Sine Wave" value="Sine Wave"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763610293318" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763610293316"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="SineWave" type="SineWave" uniqueTypeId="9011349750094602" uniqueId="1763610293270" baseType="Generator">
+							<Params name="Params">
+								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294967295" channelmode="2" paletteEnabled="0" color="4294967295" interpolated="0"/>
+								<ParamColor name="BG Color" T="COLOR" default="0" value="0" channelmode="2" paletteEnabled="0" color="0" interpolated="0"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763610293316"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292915" layerIndex="1" columnIndex="5">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="TouchDesigner - TDSyphonSpoutOut" value="TouchDesigner - TDSyphonSpoutOut"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponentbright.contrast" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentbright.contrastviewgroupedcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentinvertrgb" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentinvertrgbviewgroupedcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676794063" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="157.81071632420091078">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.15781071632420090589"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+					<RenderPass storage="0" name="AutoMask" type="DryWetEffect" uniqueTypeId="A120" uniqueId="1763676795339" baseType="DryWetEffect">
+						<RenderPass name="AutoMask" type="AutoMask" uniqueTypeId="A120" uniqueId="1763676795333" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="Contrast" T="DOUBLE" default="0.5" value="0.10329266552511415234">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.10329266552511415234"/>
+								</ParamRange>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763676795343"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763676795345" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676794061"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="SyphonVideoSource" serverName="TouchDesigner - TDSyphonSpoutOut" serverUuid="info.v002.Syphon.2A8B10BE-F079-4344-AC5E-E54A161D6F6C">
+						<SyphonInfo serverName="TouchDesigner - TDSyphonSpoutOut"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676794061"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292897" layerIndex="2" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1763610292907" layerIndex="0" columnIndex="6">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Solid Color" value="Solid Color"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponentkeystonemask" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentkeystonemaskviewgroupedcomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676795042" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676795040"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="SolidColor" type="SolidColor" uniqueTypeId="A403" uniqueId="1763676795016" baseType="Generator">
+							<Params name="Params">
+								<ParamColor name="Color" T="COLOR" default="4278190335" value="4278190335" channelmode="2" paletteEnabled="0" color="4278190335" interpolated="0"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676795040"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763676794347" layerIndex="1" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1763610292917" layerIndex="2" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1763610292899" layerIndex="0" columnIndex="7">
+			<PreloadData>
+				<VideoFile value="/Users/bbxmacstudioultra2/Downloads/DynamicProjectionMapping/glitychghost (loop).mp4"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="glitychghost (loop)" value="glitychghost (loop)"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="20.175000000000000711s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="20175" defaultBeatsDuration="26">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="1.999999999999999778">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.099132589838909532243"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="50" numManualBeats="32" detectedTempo="76"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="20175"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1280" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="720" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676796552" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676796550"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1280" height="720" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="/Users/bbxmacstudioultra2/Downloads/DynamicProjectionMapping/glitychghost (loop).mp4"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676796550"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292904" layerIndex="1" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1763676794270" layerIndex="2" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1763676794287" layerIndex="0" columnIndex="8">
+			<PreloadData>
+				<EmbeddedThumbnail encoding="LZF" width="320" height="240" bitdepth="32" data="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"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Line Scape" value="Line Scape"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676796101" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676796099"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="Line Scape" type="LineScape" uniqueTypeId="P204" uniqueId="1763676796064" baseType="Generator">
+							<Params name="Params">
+								<ParamRange name="Tilt" T="DOUBLE" default="1" value="12.393782106164383805">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1377086900684931503"/>
+								</ParamRange>
+								<ParamRange name="Direction" T="DOUBLE" default="0" value="-105.36279965753425358">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.2073255565068493067"/>
+								</ParamRange>
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="1.9570847602739727122">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.82618079337899541503"/>
+								</ParamRange>
+								<ParamRange name="Height" T="DOUBLE" default="15" value="6.0271207905251147352">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.26204873002283107786"/>
+								</ParamRange>
+								<ParamRange name="Jagginess" T="DOUBLE" default="0" value="0.43313891267123288964">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.43313891267123288964"/>
+								</ParamRange>
+								<ParamRange name="Wobble" T="DOUBLE" default="0" value="0.36397688356164381585">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.36397688356164381585"/>
+								</ParamRange>
+								<ParamRange name="Line Width" T="DOUBLE" default="0.30000001192092895508" value="0.46221089336158194261">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.092874588041431269114"/>
+								</ParamRange>
+								<ParamRange name="Fuzzyness" T="DOUBLE" default="0.5" value="0.51984021892655363217">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.51984021892655363217"/>
+								</ParamRange>
+								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294375936" channelmode="2" paletteEnabled="0" color="4294375936" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="1" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic" phase="0"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="1" value="0.98039215803146362305">
+											<PhaseSourceStatic name="PhaseSourceStatic" phase="0.98039215803146362305"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="1" value="0.96470588445663452148">
+											<PhaseSourceStatic name="PhaseSourceStatic" phase="0.96470588445663452148"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0" value="0.49733331799507141113">
+											<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49733331799507141113"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="1" value="0.98039215803146362305">
+											<PhaseSourceStatic name="PhaseSourceStatic" phase="0.98039215803146362305"/>
+										</ParamRange>
+									</Params>
+								</ParamColor>
+								<Param name="Show Knots" T="BOOL" default="1" value="0"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676796099"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763610292909" layerIndex="1" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1763610292918" layerIndex="2" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1763610292896" layerIndex="0" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1763610292908" layerIndex="1" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1763610292898" layerIndex="2" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1763676795748" layerIndex="0" columnIndex="10">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Solid Color" value="Solid Color"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponentkeystonemask" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentkeystonemaskviewgroupedcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676795750" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676795752"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="SolidColor" type="SolidColor" uniqueTypeId="A403" uniqueId="1763676795753" baseType="Generator">
+							<Params name="Params">
+								<ParamColor name="Color" T="COLOR" default="4278190335" value="4278190335" channelmode="2" paletteEnabled="0" color="4278190335" interpolated="0"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676795752"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763676794937" layerIndex="1" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1763676794938" layerIndex="2" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1763676794936" layerIndex="0" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1763676795587" layerIndex="1" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1763676796268" layerIndex="2" columnIndex="11">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="EMEET SmartCam Nova 4K" value="EMEET SmartCam Nova 4K"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4000000000000000222"/>
+								</ParamRange>
+							</Params>
+							<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponenttransformscale" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.1171875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.06591796875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763676796270" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="143.80719356449770885">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.14380719356449769841"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676796279"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="CaptureDeviceVideoSource">
+						<CaptureSource deviceId="CaptureAVFoundation_0x2120000328f00af_input"/>
+						<CaptureStream name="CaptureStream">
+							<Params name="Settings">
+								<Param name="Deinterlace" T="BOOL" default="1" value="1"/>
+								<ParamChoice name="Connection" default="0" value="0" storeChoices="0"/>
+								<ParamChoice name="Format" default="0" value="9" storeChoices="0"/>
+							</Params>
+							<AnimationSettings uniqueId="1763676796280" name="AnimationSettings"/>
+						</CaptureStream>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763676796279"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763676796236" layerIndex="0" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763676796237" layerIndex="1" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763676796238" layerIndex="2" columnIndex="12"/>
+	</Deck>
+	<Deck name="Deck" uniqueId="1763610292880" numLayersWithContent="0" numColumnsWithContent="0" numLayers="0" numColumns="0" closed="0" deckIndex="1"/>
+	<Deck name="Deck" uniqueId="1763610292886" numLayersWithContent="0" numColumnsWithContent="0" numLayers="0" numColumns="0" closed="0" deckIndex="2"/>
+	<Notes name="Notes">
+		<Note text_size_multiplier="2" text_color_index="3" text=""/>
+	</Notes>
+</Composition>
+
