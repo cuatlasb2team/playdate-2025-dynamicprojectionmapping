@@ -25,9 +25,3 @@ Next chapter:
 -blob track?
 
 Didn’t get to try this approach..
-
-Christy Rose - christiana.lauren.rose@gmail.com
-Linnea Kirby - linneakirby@gmail.com
-Srikar Hari - srikar.hari@colorado.edu
-Daniel Londono - danielprosound@gmail.com
-Anshul Roy - anshulisnot@gmail.com 
